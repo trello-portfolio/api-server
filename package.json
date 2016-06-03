@@ -1,7 +1,7 @@
 {
-  "name": "express-es6-rest-api",
-  "version": "0.2.2",
-  "description": "Starter project for an ES6 RESTful Express API",
+  "name": "api-server",
+  "version": "0.0.1",
+  "description": "a-la Trello Borads task manager",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/developit/express-es6-rest-api.git"
+    "url": "https://github.com/trello-portfolio/api-server"
   },
-  "author": "Jason Miller <jason@developit.ca>",
+  "author": "Andrew Zaikin zaikin.andry@gmail.com Igor Bochkarev kepthx@gmail.com",
   "license": "Proprietary",
   "dependencies": {
     "body-parser": "^1.13.3",
