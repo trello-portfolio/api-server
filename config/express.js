@@ -2,9 +2,9 @@ import http from "http";
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import db from "./db";
+import Datebase from "./db";
 import middleware from "./middleware";
-import api from "./api";
+// import api from "./api";
 
 var app = express();
 app.server = http.createServer(app);
@@ -19,13 +19,13 @@ app.use(bodyParser.json({
 }));
 
 // connect to db
-db( λ => {
+new Datebase(null, λ => {
 
 	// internal middleware
 	app.use(middleware());
 
 	// api router
-	app.use('/api', api());
+	// app.use('/api', api());
 
 	app.server.listen(process.env.PORT || 8080);
 
