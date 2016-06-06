@@ -1,3 +1,3 @@
-module.exports = function(sequelize){
+module.exports = function (sequelize) {
   return sequelize.define('User', {});
 };

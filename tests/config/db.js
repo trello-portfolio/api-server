@@ -1,9 +1,10 @@
-import chai from "chai";
+import chai from 'chai';
 import Database from '../../config/db';
-import Sequelize from "sequelize";
+import Sequelize from 'sequelize';
 
-let expect = chai.expect;
+const expect = chai.expect;
 
+/* eslint-disable */
 describe('Database', () => {
   it('Create new database instance should return sequilize instance', () => {
     let dbInstance = new Database();
@@ -19,3 +20,4 @@ describe('Database', () => {
     new Database(null, dbInstance => expect(dbInstance.user).to.exist);
   });
 });
+/* eslint-enable */
