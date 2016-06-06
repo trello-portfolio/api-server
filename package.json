@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "babel-node app.js",
-    "test": "babel-node ./node_modules/.bin/_mocha tests --recursive"
+    "test": "babel-node ./node_modules/.bin/_mocha tests --recursive",
+    "docs": "jsdoc -c .jsdoc.json api"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "lodash": "^4.13.1",
+    "minami": "^1.1.1",
     "pg": "^4.5.5",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.23.3"

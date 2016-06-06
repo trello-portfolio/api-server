@@ -7,6 +7,7 @@ import middleware from './middleware';
 // import api from './api';
 
 const app = express();
+
 app.server = http.createServer(app);
 
 // 3rd party middleware
