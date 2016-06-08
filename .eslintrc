@@ -273,7 +273,7 @@
       }
     ],
     // disallow declaration of variables that are not used in the code (recommended)
-    "no-use-before-define": 2,
+    "no-use-before-define": ["error", { "functions": false }],
     // disallow use of variables before they are defined
 
     //

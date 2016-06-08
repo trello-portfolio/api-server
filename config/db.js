@@ -1,6 +1,7 @@
 import Sequelize from 'sequelize';
 import _ from 'lodash';
 import fs from 'fs';
+import os from 'os';
 
 let instance = null;
 
@@ -26,7 +27,7 @@ export default class Database {
     config = config ||
       {
         name: 'trello_dev',
-        username: 'kepthx',
+        username: os.userInfo().username || 'postgres',
         password: '',
         options: {
           host: 'localhost',
@@ -45,7 +46,6 @@ export default class Database {
           const model = require(path + file)(sequelize);
           const [fileName] = file.split('.');
 
-          console.info(model);
           this[fileName.toLowerCase()] = model;
         });
         resolve(sequelize);
